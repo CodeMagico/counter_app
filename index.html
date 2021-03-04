@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media_query.css">
+    <script src='./JS/app.js' defer></script>
+</head>
+<body class="dark">
+<div class="bg">
+    <!--MENU-->
+    <div class="menu">
+        <p class='menuTitle'>Counters</p>
+        <div class="cardBox"></div>
+    </div>
+    <!--END MENU-->
+<div class="container">
+    <!--HEADER-->
+    <div class="header">
+    <div id="menuBtn">
+        <span class="iconify" data-icon="fe:bar" data-inline="true"></span>
+    </div>
+    <h1 class="title">CounterApp</h1>
+    <div class="btnThemeBox">
+        <div id="btnTheme" class='active'><span class="iconify" data-icon="mdi:lightbulb" data-inline="true"></span></div>
+    </div>
+    </div><!--END HEADER-->
+    <div class="column">
+
+        <div class="upper">
+        <div class="display">
+            <!--COUNTER-->
+            <input type='text' class="label" maxlength="14">
+            <div class="numberBox">
+            <input type="number" class="input number result" maxlength="5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </div>
+            <div class="setBtnBox">
+            <div class="btn del refresh"><span class="iconify" data-icon="mdi:close" data-inline="true"></span></div>
+            <div class="btn save"><span class="iconify" data-icon="mdi:floppy" data-inline="true"></span></div>
+            </div>
+            <!--COUNTER BUTTON-->
+            <div class="countBtnBox">
+                <div class="btn btnPlus"><span class="iconify" data-icon="ant-design:plus-outlined" data-inline="true"></span></div>
+                <div class="btn btnMinus"><span class="iconify" data-icon="ant-design:minus-outlined" data-inline="true"></span></div>
+            </div>
+            
+        </div><!--END DISPLAY-->
+        
+
+        <div class='btnAddBox'>
+            <div class="btnAdd">
+        <span class="iconify" data-icon="mdi:plus-circle" data-inline="true"></span>
+            </div>
+        </div>
+        </div><!--END UPPER-->
+        
+    </div><!--END COLUMN-->
+    <div class="lower">
+        <div class="btnBox">
+        <span>SET MIN</span>
+        <div class="minBox">
+        <div class="setCountMinus lowBtn minusMin"><span>-</span></div>
+        <input class='lowInput minValue' type="number" value='1' min='1'>
+        <div class="setCountMinus lowBtn plusMin"><span>+</span></div>    
+        </div>
+
+        
+        <span>SET MAX</span>
+        <div class="maxBox">
+        <div class="setCountPlus lowBtn minusMax"><span>-</span></div>
+        <input class='lowInput maxValue' type="number" value='1' min='1'>
+        <div class="setCountPlus lowBtn plusMax"><span>+</span></div>
+        </div>
+        
+        </div>
+    </div><!--END LOWER-->
+</div>
+</div><!--END BG-->
+</body>
+</html>

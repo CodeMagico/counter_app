@@ -1,0 +1,142 @@
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 60px;
+    height: 60px;
+  }
+  .btnThemeBox {
+    height: 40px;
+  }
+  .btnThemeBox #btnTheme {
+    height: 40px;
+  }
+  .menu {
+    opacity: 0;
+    height: calc(100% - 50px);
+    top: 50px;
+  }
+  .open {
+    opacity: 1;
+  }
+  .card {
+    height: 60px;
+  }
+  .card .cardBtnBox {
+    height: 100%;
+  }
+  .card .cardBtnBox .cardBtn {
+    height: 100%;
+    width: 60px;
+  }
+  .container .header {
+    height: 50px;
+  }
+  .container .header .title {
+    padding-left: 70px;
+  }
+  .container .header #menuBtn {
+    font-size: 50px;
+  }
+  .container .column {
+    width: 100%;
+    height: calc(100% - 90px);
+  }
+  .container .column .upper .display {
+    border-radius: 40px;
+  }
+  .container .column .btnAdd {
+    border-radius: 40px;
+  }
+  .lower {
+    height: 40px;
+  }
+  .lower .btnBox {
+    width: 100%;
+  }
+  .lower .btnBox .minBox, .lower .btnBox .maxBox {
+    height: 30px;
+  }
+  .lower .btnBox .minBox .lowBtn span, .lower .btnBox .maxBox .lowBtn span {
+    font-size: 20px;
+  }
+  .lower .btnBox .minBox .lowInput, .lower .btnBox .maxBox .lowInput {
+    width: 60px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --displayHeight: 160px;
+    --numHeight: 60px;
+  }
+  html {
+    overflow: hidden;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+  }
+  .btnThemeBox {
+    left: 5px;
+    height: 50px;
+  }
+  .btnThemeBox #btnTheme {
+    height: 50px;
+  }
+  .menu {
+    opacity: 0;
+    height: calc(100% - 60px);
+    width: 100%;
+    top: 60px;
+    left: calc(100% + 0px);
+  }
+  .open {
+    opacity: 1;
+    left: 0;
+  }
+  .container .header {
+    height: 60px;
+  }
+  .container .header .title {
+    padding-left: 70px;
+  }
+  .container .header #menuBtn {
+    right: 0;
+    font-size: 50px;
+  }
+  .container .column {
+    width: 100%;
+    height: calc(100% - 130px);
+  }
+  .container .column .upper .display {
+    border-radius: 40px;
+  }
+  .container .column .upper .display .label {
+    font-size: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .container .column .btnAdd {
+    border-radius: 40px;
+  }
+  .lower {
+    height: 70px;
+  }
+  .lower .btnBox {
+    padding-right: 5px;
+  }
+  .lower .btnBox span {
+    text-align: center;
+  }
+  .lower .btnBox .minBox, .lower .btnBox .maxBox {
+    height: 60px;
+  }
+  .lower .btnBox .minBox .lowBtn span, .lower .btnBox .maxBox .lowBtn span {
+    font-size: 30px;
+  }
+  .lower .btnBox .minBox .lowInput, .lower .btnBox .maxBox .lowInput {
+    width: 60px;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=media_query.css.map */
