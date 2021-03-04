@@ -165,6 +165,7 @@ function updateButtonCounter(){
             
             del[i].parentNode.parentNode.remove();
             index--;
+            picker--;
             return check();
             }
         };
@@ -193,13 +194,14 @@ display = document.querySelectorAll('.display');
 updateButtonCounter()
 index++;
 check();
-//COUNTER BG COLOR
+//ADD BG COLOR
 if(picker == 5){
     picker = 0;
 }else{
     picker++;
 }
 display[index].style.background = eval('bg' + picker);
+display[index].classList.add('new');//ADD ANIMATION
 //NEW COUNTER SET
 result[index].value = '0';
 label[index].value = 'my count ' + display.length;

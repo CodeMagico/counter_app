@@ -430,6 +430,8 @@ html, body {
   height: var(--displayHeight);
   border-radius: 35px;
   background: rgba(0, 140, 255, 0.5);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .container .column .upper .display .label {
@@ -548,6 +550,11 @@ html, body {
   color: var(--text);
 }
 
+.container .column .upper .new {
+  -webkit-animation: zoom 0.2s ease forwards;
+          animation: zoom 0.2s ease forwards;
+}
+
 .container .column .btnAddBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,5 +652,31 @@ html, body {
   font-family: 'Roboto';
   width: 120px;
   color: var(--text);
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
