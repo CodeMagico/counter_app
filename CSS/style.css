@@ -43,11 +43,11 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--middle);
+  background: var(--light);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--light);
+  background: var(--lighter);
 }
 
 :root {
@@ -84,9 +84,9 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: -360px;
+  left: -400px;
   top: 40px;
-  width: 360px;
+  width: 400px;
   height: calc(100% - 70px);
   font-family: 'Roboto';
   background: var(--middle);
@@ -127,16 +127,8 @@ html, body {
 }
 
 .cardBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   overflow-y: auto;
-  padding: 4px;
-  row-gap: 4px;
+  padding: 0 4px 0 4px;
 }
 
 .card {
@@ -152,6 +144,7 @@ html, body {
           justify-content: space-between;
   overflow: hidden;
   width: 100%;
+  margin: 4px 0 4px 0;
   color: var(--text);
   border-radius: 8px;
 }
