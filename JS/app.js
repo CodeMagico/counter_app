@@ -127,7 +127,7 @@ if(keys.length == 0){
 
         //CHECK NUM OVERFLOW
         let num = document.querySelectorAll('.numberCount');
-        overflowNum(num[i].textContent, num[i]);
+        overflowNum(num[i].textContent, num[i].parentNode);
     }
     menuButton();
 }
@@ -326,7 +326,7 @@ function menuButton(){
         }
         //CHECK NUM OVERFLOW
         let num = document.querySelectorAll('.numberCount');
-        overflowNum(num[i].textContent, num[i]);
+        overflowNum(num[i].textContent, num[i].parentNode);
     }
 };
 
