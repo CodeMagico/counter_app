@@ -115,6 +115,10 @@
     font-size: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-weight: 400;
+  }
+  .container .column .upper .display .numberBox .number {
+    font-weight: 300;
   }
   .container .column .btnAdd {
     border-radius: 40px;
