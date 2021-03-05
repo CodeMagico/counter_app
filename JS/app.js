@@ -351,6 +351,9 @@ function editCount(name,num){
     display[index].style.background = eval('bg' + picker)
     //NEW COUNTER SET
     result[index].value = num;
+    //CHECK IF NUM OVERFLOW
+    overflowNum(num, result[index]);
+    
     return label[index].value = name;
     
 }
