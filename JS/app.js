@@ -124,6 +124,10 @@ if(keys.length == 0){
 
         div.innerHTML = card;
         cardBox.appendChild(div)
+
+        //CHECK NUM OVERFLOW
+        let num = document.querySelectorAll('.numberCount');
+        overflowNum(num[i].textContent, num[i]);
     }
     menuButton();
 }
@@ -147,11 +151,19 @@ function updateButtonCounter(){
 
     for(let i = 0;i < display.length; i++){
 
-        plus[i].onclick = () => result[i].value = Number(result[i].value) + max;
+        plus[i].onclick = () => {
+            result[i].value = Number(result[i].value) + max;
+            return overflowNum(result[i].value, result[i]);
+        }
            
-        minus[i].onclick = () => result[i].value -= min;
+        minus[i].onclick = () => {
+            result[i].value -= min;
+            return overflowNum(result[i].value, result[i]);
+        }
     
         result[i].onclick = () => input[i].select();
+
+        result[i].oninput = () => overflowNum(result[i].value, result[i]);
             
         label[i].onclick = () => label[i].select();
             
@@ -180,6 +192,21 @@ function updateButtonCounter(){
 }
 //START BUTTON FUN
 updateButtonCounter();
+
+//CHECK IF NUM LENGHT > 5
+function overflowNum(num, ele) {
+    if(num.length > 5){
+        if(ele.classList.contains('overFive')){
+            //NOTHING
+        }else{
+            ele.classList.add('overFive')
+            //LESS FONT SIZE
+        }
+        
+    }else if(num.length <= 5){
+        ele.classList.remove('overFive')
+    }
+}
 
 //ADD NEW COUNTER
 btnAdd.onclick = () =>{
@@ -274,6 +301,7 @@ function addCount(key){
 
     div.innerHTML = card;
     cardBox.appendChild(div);
+
     //UPDATE BUTTON
     return menuButton();
 }
@@ -295,7 +323,10 @@ function menuButton(){
         delBtn[i].onclick = () => {
             _card.remove();
             return localStorage.removeItem(_card.id);
-        }    
+        }
+        //CHECK NUM OVERFLOW
+        let num = document.querySelectorAll('.numberCount');
+        overflowNum(num[i].textContent, num[i]);
     }
 };
 

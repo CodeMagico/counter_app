@@ -185,6 +185,11 @@ html, body {
   font-weight: 400;
 }
 
+.card .overFive {
+  font-size: 14px;
+  margin: auto 0 auto 0;
+}
+
 .card .cardBtnBox {
   position: relative;
   -webkit-box-pack: justify;
@@ -474,6 +479,10 @@ html, body {
 
 .container .column .upper .display .numberBox .active {
   display: block;
+}
+
+.container .column .upper .display .numberBox .overFive {
+  font-size: calc(var(--numHeight) - 30px);
 }
 
 .container .column .upper .display .setBtnBox {
