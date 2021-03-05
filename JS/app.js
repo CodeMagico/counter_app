@@ -379,7 +379,7 @@ minusMin.onclick = () => {
     }
 }
 plusMin.onclick = () => {
-    if(min == 9999){
+    if(min == 99999){
         //nothing here
     }else{
         min++;
@@ -395,7 +395,7 @@ minusMax.onclick = () => {
     }
 }
 plusMax.onclick = () => {
-    if(max == 9999){
+    if(max == 99999){
         //nothing here
     }else{
         max++;
@@ -414,7 +414,13 @@ lowerButton()
 //IF TRY TO SET VALUE < 1
 minValue.oninput = () => {
     if(minValue.value < 1){
-       return minValue.value = 1;
+
+        return minValue.value = 1;
+
+    }else if(minValue.value.length == 6){
+        //IF SET OVER 99999
+        return minValue.value = 99999;
+
     }else{
         return min = Number(minValue.value);
     }
@@ -422,7 +428,13 @@ minValue.oninput = () => {
 
 maxValue.oninput = () => {
     if(maxValue.value < 1){
+
         return maxValue.value = 1;
+
+    }else if(maxValue.value.length == 6){
+        //IF SET OVER 99999
+        return maxValue.value = 99999;
+
     }else{ 
         return max = Number(maxValue.value);
     }
