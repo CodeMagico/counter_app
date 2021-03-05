@@ -14,6 +14,7 @@ Simple counter web app developed in pure JS
 - Setting for step size
 - You can save your counts, edit or delete them later
 - Full responsive
+- Dark mode
 
 ---
 
