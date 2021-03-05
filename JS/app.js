@@ -419,7 +419,8 @@ minValue.oninput = () => {
 
     }else if(minValue.value.length == 6){
         //IF SET OVER 99999
-        return minValue.value = 99999;
+        min = 99999;
+        return minValue.value = min;
 
     }else{
         return min = Number(minValue.value);
@@ -433,7 +434,8 @@ maxValue.oninput = () => {
 
     }else if(maxValue.value.length == 6){
         //IF SET OVER 99999
-        return maxValue.value = 99999;
+        max = 99999;
+        return maxValue.value = max;
 
     }else{ 
         return max = Number(maxValue.value);
