@@ -230,6 +230,13 @@ display[index].style.background = eval('bg' + picker);
 display[index].classList.add('new');//ADD ANIMATION
 //NEW COUNTER SET
 result[index].value = '0';
+
+//BUG CLASS FIX
+if(result[index].classList.contains('overFive')){
+    
+    result[index].classList.remove('overFive');
+}
+
 label[index].value = 'my count ' + display.length;
 if(label[index].value == label[index - 1].value){
     console.log('yaaaaa')
@@ -352,7 +359,7 @@ function editCount(name,num){
 
     //NEW COUNTER SET
     result[index].value = num;
-    
+
     //CHECK IF NUM OVERFLOW
     overflowNum(num, result[index]);
 
