@@ -165,7 +165,6 @@ function updateButtonCounter(){
             
             del[i].parentNode.parentNode.remove();
             index--;
-            picker--;
             return check();
             }
         };
