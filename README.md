@@ -1,24 +1,24 @@
-## Counter App v1.0
+## Counter App
 
 ---
 
-Author: Renato Salzano
-
+Author: **Renato Salzano**
 Email: [renato.salzano92@gmail.com](mailto:renato.salzano92@gmail.com)
+Link: [CounterApp v1.0](https://codemagico.github.io/counter_app/)
 
 Simple counter web app developed in pure JS
 
-- Intuitive design, easy to use
-- Supports multiply counters
-- Quick input to change labels and numbers
-- Setting for step size
-- You can save your counts, edit or delete them later
-- Full responsive
-- Dark mode
+#### Feature
 
----
+- [x] Intuitive design, easy to use
+- [x] Supports multiply counters
+- [x] Quick input to change labels and numbers
+- [x] Setting for step size
+- [x] You can save your counts, edit or delete them later
+- [x] Full responsive
+- [x] Dark mode :bulb:
 
-## Issue
+#### Issue
 
-- Landscape mode don't work well
-- Rapid fire on save button fails to save all counts correctly
+- [ ] Landscape mode don't work well
+- [ ] Rapid fire on save button fails to save all counts correctly
