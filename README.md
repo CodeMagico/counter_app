@@ -4,7 +4,7 @@
 
 Author: **Renato Salzano**  
 Email: [renato.salzano92@gmail.com](mailto:renato.salzano92@gmail.com)  
-Link: [CounterApp v1.0](https://codemagico.github.io/counter_app/)
+Link: [CounterApp v1.0](https://renatosalzano.github.io/counter_app/)
 
 Simple counter web app developed in pure JS
 
